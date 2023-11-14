@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Unica+One&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "ClashDisplay-Variable";
+  src: url("../fonts/ClashDisplay-Variable.woff2") format("woff2"),
+    url("../fonts/ClashDisplay-Variable.woff") format("woff"),
+    url("../fonts/ClashDisplay-Variable.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+.gradient-btn {
+  @apply text-white bg-gradient-to-l from-[#903AFF] via-[#D434FE] to-[#FE34B9] py-2 px-5 rounded;
+}
