@@ -16,3 +16,9 @@
 .gradient-btn {
   @apply text-white bg-gradient-to-l from-[#903AFF] via-[#D434FE] to-[#FE34B9] py-2 px-5 rounded;
 }
+
+@layer utilities {
+  * {
+    scroll-behavior: smooth;
+  }
+}

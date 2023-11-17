@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Getlinked</title>
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg-[#150E28] p-0 m-0 box-border font-Body w-[100%]">
     <!--FOR THE HEADER-->
     <header
-      class="flex justify-between items-end lg:items-center items-center p-10 border-b border-white/20 font-Text tracking-wide w-[100%]"
+      class="flex justify-between items-end lg:items-center p-10 border-b border-white/20 font-Text tracking-wide w-[100%]"
     >
       <div class="md:w-[30%] lg:w-[50%] lg:pl-12">
         <h1 class="text-white font-Body lg:text-lg cursor-pointer">
@@ -19,36 +20,38 @@
 
       <div class="w-5 h-5 md:hidden">
         <img src="Assets/menu.png" alt="menu bar" id="burger" />
-        <img
-          src="Assets/Cancel icon.png"
-          alt="cancel icon"
-          id="burger2"
-          class="hidden"
-        />
       </div>
 
       <nav
-        class="hidden md:flex md:items-center w-full h-screen md:h-fit md:w-[70%] lg:w-[60%] p-8 md:p-0 fixed md:relative top-[90px] left-0 md:top-0 bg-[#150E28] md:bg-none"
+        class="hidden md:flex md:items-center w-full h-screen md:h-fit md:w-[70%] lg:w-[60%] p-8 md:p-0 fixed md:relative top-0 left-0 md:top-0 bg-[#150E28] md:bg-none z-[999]"
         id="menu"
       >
+        <div class="w-7 h-7 md:hidden ml-auto mb-10">
+          <img
+            src="Assets/Cancel icon.png"
+            alt="cancel icon"
+            id="burger2"
+            class="hidden"
+          />
+        </div>
         <ul
-          class="md:flex items-center justify-between items-end lg:items-center md:space-x-5 lg:space-x-0 md:w-[70%] lg:w-[60%]"
+          class="md:flex justify-between items-end lg:items-center md:space-x-5 lg:space-x-0 md:w-[70%] lg:w-[60%]"
         >
           <li class="text-white font-Text tracking-wide pb-5 md:pb-0">
-            <a href=""></a>Timeline
+            <a href="#section3">Timeline</a>
           </li>
           <li class="text-white font-Text tracking-wide pb-5 md:pb-0">
-            <a href=""></a>Overview
+            <a href="#section1">Overview</a>
           </li>
           <li class="text-white font-Text tracking-wide pb-5 md:pb-0">
-            <a href=""></a>FAQs
+            <a href="#section2">FAQs</a>
           </li>
           <li class="text-white font-Text tracking-wide pb-5 md:pb-0">
-            <a href=""></a>Contact
+            <a href="#section4">Contact</a>
           </li>
         </ul>
 
-        <button class="gradient-btn md:ml-20">Register</button>
+        <button class="gradient-btn md:ml-20"><a href="">Register</a></button>
       </nav>
     </header>
 
@@ -138,10 +141,13 @@
     <!--SECOND SECTION--><!--SECOND SECTION--><!--SECOND SECTION--><!--SECOND SECTION-->
     <section
       class="flex flex-col lg:flex-row border-b border-white/20 pb-10 W-[100%]"
+      id="section1"
     >
       <!--FOR LEFT SIDE-->
       <div
         class="flex flex-col items-center py-5 px-3 lg:justify-center lg:flex-row lg:items-end lg:w-[50%]"
+        data-aos="fade-right"
+        data-aos-duration="900"
       >
         <img
           src="Assets/The big idea bulb.png"
@@ -284,6 +290,7 @@
     <!--FOR FAQ SECTION--><!--FOR FAQ SECTION--><!--FOR FAQ SECTION--><!--FOR FAQ SECTION-->
     <section
       class="flex flex-col lg:flex-row w-[100%] border-b border-white/20 pb-10"
+      id="section2"
     >
       <!--FOR THE LEFT SIDE-->
       <div class="flex flex-col gap-8 lg:w-[50%] px-5 lg:px-20 pt-5 lg:pt-20">
@@ -365,7 +372,7 @@
     </section>
 
     <!--FOR THE TIMELINE SECTION--><!--FOR THE TIMELINE SECTION--><!--FOR THE TIMELINE SECTION-->
-    <section class="flex flex-col w-[100%] gap-10 py-10">
+    <section class="flex flex-col w-[100%] gap-10 py-10" id="section3">
       <!--FOR TITLE-->
       <div class="flex flex-col items-center">
         <h2 class="text-white font-Body text-lg text-center">Timeline</h2>
@@ -377,7 +384,12 @@
       <!--FOR THE DESKTOP TIMELINE-->
       <div class="hidden lg:flex lg:flex-col gap-2 w-[100%]">
         <!--NO.1-->
-        <div class="flex flex-row items-end gap-10 w-full justify-center">
+        <div
+          class="flex flex-row items-end gap-10 w-full justify-center"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <div class="flex flex-col w-full items-end">
             <p class="text-[#D434FE] font-Text font-bold text-lg">
               Hackathon Announcement
@@ -408,6 +420,10 @@
         <!--NO.2-->
         <div
           class="flex flex-row-reverse items-end gap-10 justify-center w-full"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-delay="200"
         >
           <div class="flex flex-col w-full items-start">
             <p class="text-[#D434FE] font-Text font-bold text-lg lg:text-left">
@@ -439,7 +455,13 @@
           </div>
         </div>
         <!--NO.3-->
-        <div class="flex flex-row items-end gap-10 justify-center w-full">
+        <div
+          class="flex flex-row items-end gap-10 justify-center w-full"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-delay="200"
+        >
           <div class="flex flex-col w-full items-end">
             <p
               class="text-[#D434FE] font-Text font-bold text-sm lg:text-lg text-left lg:text-right"
@@ -471,6 +493,10 @@
         <!--NO.4-->
         <div
           class="flex flex-row-reverse items-end gap-10 justify-center w-full"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-delay="200"
         >
           <div class="flex flex-col w-full items-start">
             <p class="text-[#D434FE] font-Text font-bold text-lg text-left">
@@ -502,7 +528,13 @@
           </div>
         </div>
         <!--NO.5-->
-        <div class="flex flex-row items-end gap-10 justify-center w-full">
+        <div
+          class="flex flex-row items-end gap-10 justify-center w-full"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-delay="200"
+        >
           <div class="flex flex-col w-full items-end">
             <p
               class="text-[#D434FE] font-Text font-bold text-sm lg:text-lg text-left lg:text-right"
@@ -535,6 +567,10 @@
         <!--NO.6-->
         <div
           class="flex flex-row-reverse items-end gap-10 justify-center w-full"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-delay="200"
         >
           <div class="flex flex-col w-full items-start">
             <p class="text-[#D434FE] font-Text font-bold text-lg text-left">
@@ -567,7 +603,12 @@
       <!--FOR MOBILE & TABLET TIMELINE-->
       <div class="flex flex-col gap-5 px-5 w-[100%] lg:hidden">
         <!--FOR NO.1-->
-        <div class="flex gap-5">
+        <div
+          class="flex gap-5"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <div class="flex flex-col gap-2 items-center w-[15%]">
             <img src="Assets/Line 3.png" alt="vertical line" class="h-[77px]" />
             <img src="Assets/No 1.png" alt="circle" class="w-[50px] h-[50px]" />
@@ -584,7 +625,13 @@
           </div>
         </div>
         <!--FOR NO.2-->
-        <div class="flex gap-5">
+        <div
+          class="flex gap-5"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-delay="200"
+        >
           <div class="flex flex-col gap-2 items-center w-[15%]">
             <img src="Assets/Line 3.png" alt="vertical line" class="h-[77px]" />
             <img src="Assets/No 2.png" alt="circle" class="w-[50px] h-[50px]" />
@@ -601,7 +648,13 @@
           </div>
         </div>
         <!--FOR NO.3-->
-        <div class="flex gap-5">
+        <div
+          class="flex gap-5"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-delay="200"
+        >
           <div class="flex flex-col gap-2 items-center w-[15%]">
             <img src="Assets/Line 3.png" alt="vertical line" class="h-[77px]" />
             <img src="Assets/No 3.png" alt="circle" class="w-[50px] h-[50px]" />
@@ -617,7 +670,13 @@
           </div>
         </div>
         <!--FOR NO.4-->
-        <div class="flex gap-5">
+        <div
+          class="flex gap-5"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-delay="200"
+        >
           <div class="flex flex-col gap-2 items-center w-[15%]">
             <img src="Assets/Line 3.png" alt="vertical line" class="h-[77px]" />
             <img src="Assets/No 4.png" alt="circle" class="w-[50px] h-[50px]" />
@@ -634,7 +693,13 @@
           </div>
         </div>
         <!--FOR NO.5-->
-        <div class="flex gap-5">
+        <div
+          class="flex gap-5"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-delay="200"
+        >
           <div class="flex flex-col gap-2 items-center w-[15%]">
             <img src="Assets/Line 3.png" alt="vertical line" class="h-[77px]" />
             <img src="Assets/No 5.png" alt="circle" class="w-[50px] h-[50px]" />
@@ -651,7 +716,13 @@
           </div>
         </div>
         <!--FOR NO.6-->
-        <div class="flex gap-5">
+        <div
+          class="flex gap-5"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-delay="200"
+        >
           <div class="flex flex-col gap-2 items-center w-[15%]">
             <img src="Assets/Line 3.png" alt="vertical line" class="h-[77px]" />
             <img src="Assets/No 6.png" alt="circle" class="w-[50px] h-[50px]" />
@@ -669,7 +740,7 @@
     </section>
 
     <!--FOR FOOTER--><!--FOR FOOTER--><!--FOR FOOTER--><!--FOR FOOTER--><!--FOR FOOTER-->
-    <footer class="p-5 md:p-20 bg-[#100B20]">
+    <footer class="p-5 md:p-20 bg-[#100B20]" id="section4">
       <div class="grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-0">
         <div class="flex flex-col gap-8 lg:col-span-2">
           <div>
@@ -691,9 +762,9 @@
 
         <div class="flex flex-col gap-2 lg:col-span-1">
           <p class="text-[#D434FE] font-Text">Useful Links</p>
-          <p class="font-Text text-white">Overview</p>
-          <p class="font-Text text-white">Timeline</p>
-          <p class="font-Text text-white">FAQs</p>
+          <p class="font-Text text-white"><a href="#section1">Overview</a></p>
+          <p class="font-Text text-white"><a href="#section3">Timeline</a></p>
+          <p class="font-Text text-white"><a href="#section2">FAQs</a></p>
           <p class="font-Text text-white">Register</p>
           <div class="flex gap-3">
             <p class="text-[#D434FE] font-Text">Follow us</p>
@@ -746,5 +817,9 @@
     </footer>
 
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
