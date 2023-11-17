@@ -20,5 +20,6 @@
 @layer utilities {
   * {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 }
